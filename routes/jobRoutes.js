@@ -23,4 +23,10 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+router.get("/getJobs", async (req, res) => {
+  const allJObs = Job.find();
+
+  return res.status(400).json({allJObs})
+})
+
 module.exports = router;

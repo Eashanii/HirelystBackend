@@ -41,7 +41,7 @@ export const registerEmployer = async (req, res) => {
   }
 };
 
-export const loginEmployer = async (req, res) => {
+export const loginAdmin = async (req, res) => {
   const {email, password}= req.body;
   try{
 
